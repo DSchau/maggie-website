@@ -1,0 +1,39 @@
+.header {
+  flex: 0;
+  min-height: 22.5vh;
+  width: 100%;
+  background-color: $base-color;
+  /*background-image: url(~/static/images/skyline.jpg);
+  background-size: cover;
+  background-blend-mode: overlay;*/
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  .name, .description {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+  }
+  .name {
+    color: white;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    border-top: 4px solid $contrast-color;
+    border-bottom: 4px solid $contrast-color;
+    @media only screen and (min-width: $lg-breakpoint) {
+      font-size: 5rem;
+    }
+  }
+  .description {
+    font-size: 1.2rem;
+    color: $contrast-color;
+    letter-spacing: 1px;
+    @media only screen and (min-width: $lg-breakpoint) {
+      font-size: 1.6rem;
+    }
+  }
+}

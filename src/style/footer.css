@@ -1,0 +1,33 @@
+.footer {
+  flex: 0;
+  min-height: 5vh;
+  background-color: $base-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
+  .details {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .detail {
+    display: inline-block;
+    color: white;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+    &:after {
+      content: '•';
+      position: relative;
+      left: 0.5rem;
+    }
+    &:last-child:after {
+      content: '';
+    }
+  }
+}

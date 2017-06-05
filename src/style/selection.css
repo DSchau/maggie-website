@@ -1,0 +1,11 @@
+::selection {
+  color: $base-color-light;
+  background-color: $base-color;
+}
+
+.name, .description {
+  &::selection {
+    color: $base-color;
+    background-color: $base-color-light;
+  }
+}

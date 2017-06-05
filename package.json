@@ -1,0 +1,38 @@
+{
+  "name": "website-maggie",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "webpack --env.environment production",
+    "clean": "del-cli \"dist/**/*\"",
+    "predeploy": "npm run build",
+    "deploy": "s3-deploy \"dist/**/*\" --cwd \"dist\" --region \"us-east-1\" --gzip --bucket \"maggiealcorn.com\"",
+    "start": "webpack-dev-server --hot --quiet --env.environment development"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "~7.1.1",
+    "babel-core": "~6.24.1",
+    "babel-loader": "~7.0.0",
+    "babel-plugin-syntax-dynamic-import": "~6.18.0",
+    "babel-preset-env": "~1.5.1",
+    "css-loader": "~0.28.4",
+    "del-cli": "~1.0.0",
+    "extract-text-webpack-plugin": "~2.1.0",
+    "html-webpack-plugin": "~2.28.0",
+    "postcss-import": "~10.0.0",
+    "postcss-loader": "~2.0.5",
+    "postcss-nested": "~2.0.2",
+    "postcss-simple-vars": "~4.0.0",
+    "s3-deploy": "~0.7.5",
+    "style-loader": "~0.18.1",
+    "webpack": "~2.6.1",
+    "webpack-config-assign": "~1.0.0",
+    "webpack-dev-server": "~2.4.5"
+  },
+  "dependencies": {
+    "normalize.css": "~7.0.0",
+    "webfontloader": "~1.6.28"
+  }
+}
