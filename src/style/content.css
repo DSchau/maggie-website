@@ -4,6 +4,8 @@
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   @media only screen and (min-width: $lg-breakpoint) {
     flex-direction: row;
   }
@@ -11,6 +13,12 @@
 
 .main-content {
   width: 100%;
+}
+
+.coming-soon {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: $base-color;
 }
 
 @media only screen and (min-width: $lg-breakpoint) {
