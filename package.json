@@ -1,38 +1,40 @@
 {
-  "name": "website-maggie",
+  "name": "@maggiealcorn/website",
+  "description": "The website for Maggie Alcorn, auditor and financial analyst",
   "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "prebuild": "npm run clean",
-    "build": "webpack --env.environment production",
-    "clean": "del-cli \"dist/**/*\"",
-    "predeploy": "npm run build",
-    "deploy": "s3-deploy \"dist/**/*\" --cwd \"dist\" --region \"us-east-1\" --gzip --bucket \"maggiealcorn.com\"",
-    "start": "webpack-dev-server --hot --quiet --env.environment development"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "autoprefixer": "~7.1.1",
-    "babel-core": "~6.24.1",
-    "babel-loader": "~7.0.0",
-    "babel-plugin-syntax-dynamic-import": "~6.18.0",
-    "babel-preset-env": "~1.5.1",
-    "css-loader": "~0.28.4",
-    "del-cli": "~1.0.0",
-    "extract-text-webpack-plugin": "~2.1.0",
-    "html-webpack-plugin": "~2.28.0",
-    "postcss-import": "~10.0.0",
-    "postcss-loader": "~2.0.5",
-    "postcss-nested": "~2.0.2",
-    "postcss-simple-vars": "~4.0.0",
-    "s3-deploy": "~0.7.5",
-    "style-loader": "~0.18.1",
-    "webpack": "~2.6.1",
-    "webpack-config-assign": "~1.0.0",
-    "webpack-dev-server": "~2.4.5"
-  },
+  "author": "Dustin Schau <dustinschau@gmail.com> (https://dustinschau.com)",
   "dependencies": {
-    "normalize.css": "~7.0.0",
-    "webfontloader": "~1.6.28"
+    "emotion": "~9.0.2",
+    "emotion-server": "~9.0.2",
+    "gatsby": "^1.9.238",
+    "gatsby-link": "^1.6.39",
+    "gatsby-plugin-emotion": "~1.1.16",
+    "gatsby-plugin-react-helmet": "^2.0.8",
+    "gatsby-plugin-react-next": "~1.0.11",
+    "gatsby-plugin-typography": "~1.7.18",
+    "gatsby-remark-smartypants": "~1.4.12",
+    "gatsby-source-filesystem": "~1.5.27",
+    "gatsby-transformer-remark": "~1.7.37",
+    "gatsby-transformer-yaml": "~1.5.16",
+    "normalize.css": "~8.0.0",
+    "react": "~16.2.0",
+    "react-dom": "~16.2.0",
+    "react-emotion": "~9.0.2",
+    "react-helmet": "^5.2.0",
+    "typography-theme-irving": "~0.15.10"
+  },
+  "keywords": ["gatsby"],
+  "license": "MIT",
+  "scripts": {
+    "precommit": "pretty-quick --staged",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "devDependencies": {
+    "husky": "~0.14.3",
+    "prettier": "~1.11.1",
+    "pretty-quick": "~1.4.1"
   }
 }
