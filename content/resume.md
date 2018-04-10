@@ -36,10 +36,21 @@ experience:
     start: 2013-05-01T00:00:00.000Z
     end: 2013-08-20T00:00:00.000Z
 education:
-  name: Creighton University
-  start: 08/22/2010
-  end: 05/01/2014
-  description: BSBA, Majored in Finance and Minored in Spanish
+  - name: Creighton University
+    location: Omaha, NE
+    gpa: 3.51
+    start: 2010-08-22T00:00:00.000Z
+    end: 2014-05-01T00:00:00.000Z
+    description: BSBA, Majored in Finance and Minored in Spanish
+  - name: University of Granada
+    location: Granada, Spain
+    start: 2012-05-01T00:00:00.000Z
+    end: 2012-08-01T00:00:00.000Z
+    description: Study of Spanish language and culture through classroom and immersion experience
+skills:
+  - Extensive knowledge of SQL language, MS Access and Excel for advanced data analysis
+  - Experience using SAP, Oracle Database/Application and Hyperion Financial Management
+  - Strong oral and written communication skills
 ---
 
 An awesome person, all around
