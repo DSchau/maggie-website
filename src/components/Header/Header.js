@@ -17,6 +17,8 @@ const Title = styled.h1`
   padding: 0.5rem 0;
   color: white;
 
+  font-family: Yrsa, sans-serif;
+
   text-transform: uppercase;
 `;
 
