@@ -34,7 +34,9 @@ export default function IndexPage({ data }) {
   const { education, experience, skills } = resume.frontmatter;
   return (
     <Container>
-      <Helmet title="Driven and talented financial analyst" meta={[]} />
+      <Helmet title="Driven and talented financial analyst" meta={[
+        { name: 'robots', content: 'noindex, nofollow' }
+      ]} />
       <Category id="professional-experience">
         <Title>Professional Experience</Title>
         {[experience.HDR, experience.UPRR, experience.UPRRIntern].map(
